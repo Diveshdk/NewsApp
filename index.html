@@ -70,7 +70,7 @@
       let totalPages;
   
       const fetchNews = async (query, page) => {
-          let r = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=292d3d22e7874f19bce7f517c74e2221&pageSize=${articlesPerPage}&page=${page}`);
+          let r = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=put your key here&pageSize=${articlesPerPage}&page=${page}`);
           let a = await r.json();
           totalPages = Math.ceil(a.totalResults / articlesPerPage);
   
